@@ -12,11 +12,14 @@ class Read:
     _laparams=LAParams()
 
 
-    def __init__(self, filePath, pages=[]):
+    def __init__(self, fileIn, pages=[]):
         """
         """
-        self._fp=filePath
-        self._fd=open(filePath, "rb")
+        if not hasattr(fileIn, "read")
+            self._fp=filePath
+            self._fd=open(filePath, "rb")
+        else:
+            self._fd=fileIn
         self._pages=PDFPage.get_pages(self._fd, pagenos=pages)
         self._pages_text=[]
 
