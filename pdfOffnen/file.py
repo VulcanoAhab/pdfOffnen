@@ -30,7 +30,7 @@ class Read:
         """
         if self._pages_text:return self._pages_text
         for page in self._pages:
-            #set interpreter per page - multiprocess
+            #set interpreter per page - multiprocess?
             _fileLike=StringIO()
             _device=TextConverter(self._resourceManager, _fileLike,
                                   codec=self._codec, laparams=self._laparams)
