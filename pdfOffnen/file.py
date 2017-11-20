@@ -15,7 +15,7 @@ class Read:
     def __init__(self, fileIn, pages=[]):
         """
         """
-        if not hasattr(fileIn, "read")
+        if not hasattr(fileIn, "read"):
             self._fp=filePath
             self._fd=open(filePath, "rb")
         else:
